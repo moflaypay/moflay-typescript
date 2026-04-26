@@ -1,9 +1,9 @@
-speakeasyVersion: 1.634.2
+speakeasyVersion: 1.761.9
 sources:
     Moflay API:
         sourceNamespace: moflay-api
-        sourceRevisionDigest: sha256:477a19cbbd24089617fba77bb2b8b89349e813ac3afc4018b8639aac090ff9b3
-        sourceBlobDigest: sha256:3bad3265c2a8adedaa1a706a290227aa6195303b6cd84a79ae21cb47caa9103d
+        sourceRevisionDigest: sha256:dece6136ccafdfcf9e3f62b5cd3a3bde4a0058472e0c9e49f53e4b7f8dbd36c6
+        sourceBlobDigest: sha256:4219e50460a554068b169d8a0131c9e5b4ea997572b578ca4582c2724cb38ade
         tags:
             - latest
             - 1.0.0
@@ -11,10 +11,10 @@ targets:
     moflay:
         source: Moflay API
         sourceNamespace: moflay-api
-        sourceRevisionDigest: sha256:477a19cbbd24089617fba77bb2b8b89349e813ac3afc4018b8639aac090ff9b3
-        sourceBlobDigest: sha256:3bad3265c2a8adedaa1a706a290227aa6195303b6cd84a79ae21cb47caa9103d
+        sourceRevisionDigest: sha256:dece6136ccafdfcf9e3f62b5cd3a3bde4a0058472e0c9e49f53e4b7f8dbd36c6
+        sourceBlobDigest: sha256:4219e50460a554068b169d8a0131c9e5b4ea997572b578ca4582c2724cb38ade
         codeSamplesNamespace: moflay-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:1dc79e3c52c40fbe602cf9c8601abaa47b59b925ce0d77ec0a6ed660a0b84618
+        codeSamplesRevisionDigest: sha256:ef9c0771aa0ebe369ea9bc0366d4e1331bd953953d7cbeebf22ac2c27b11fbdf
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -29,6 +29,9 @@ workflow:
         moflay:
             target: typescript
             source: Moflay API
+            publish:
+                npm:
+                    token: $npm_token
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/moflay/moflay/moflay-api-typescript-code-samples

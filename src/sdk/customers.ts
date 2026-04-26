@@ -68,23 +68,6 @@ export class Customers extends ClientSDK {
   }
 
   /**
-   * Update a customer
-   *
-   * @remarks
-   * Update a customer in the organization
-   */
-  async update(
-    request: operations.UpdateRequest,
-    options?: RequestOptions,
-  ): Promise<models.Customer> {
-    return unwrapAsync(customersUpdate(
-      this,
-      request,
-      options,
-    ));
-  }
-
-  /**
    * Delete a customer
    *
    * @remarks
@@ -95,6 +78,23 @@ export class Customers extends ClientSDK {
     options?: RequestOptions,
   ): Promise<models.CustomerDeleteResponse> {
     return unwrapAsync(customersDelete(
+      this,
+      request,
+      options,
+    ));
+  }
+
+  /**
+   * Update a customer
+   *
+   * @remarks
+   * Update a customer in the organization
+   */
+  async update(
+    request: operations.UpdateRequest,
+    options?: RequestOptions,
+  ): Promise<models.Customer> {
+    return unwrapAsync(customersUpdate(
       this,
       request,
       options,
