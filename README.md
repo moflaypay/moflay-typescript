@@ -43,10 +43,6 @@ For more information about the API: [Moflay Documentation](https://moflay.com/do
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-> [!TIP]
-> To finish publishing your SDK to npm and others you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
-
-
 The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
@@ -137,7 +133,7 @@ This SDK supports the following security scheme globally:
 
 | Name    | Type | Scheme      | Environment Variable |
 | ------- | ---- | ----------- | -------------------- |
-| `token` | http | HTTP Bearer | `MOFLAY_API_KEY`       |
+| `token` | http | HTTP Bearer | `MOFLAY_TOKEN`       |
 
 To authenticate with the API the `token` parameter must be set when initializing the SDK client instance. For example:
 ```typescript
@@ -171,24 +167,23 @@ run();
 <details open>
 <summary>Available methods</summary>
 
-### [customers](docs/sdks/customers/README.md)
+### [Customers](docs/sdks/customers/README.md)
 
 * [list](docs/sdks/customers/README.md#list) - List all customers
 * [create](docs/sdks/customers/README.md#create) - Create a customer
 * [getOne](docs/sdks/customers/README.md#getone) - Get a customer
-* [update](docs/sdks/customers/README.md#update) - Update a customer
 * [delete](docs/sdks/customers/README.md#delete) - Delete a customer
+* [update](docs/sdks/customers/README.md#update) - Update a customer
 
-### [express](docs/sdks/express/README.md)
+### [Express](docs/sdks/express/README.md)
 
 * [pay](docs/sdks/express/README.md#pay) - Initiate express payment
 
-
-### [payments](docs/sdks/payments/README.md)
+### [Payments](docs/sdks/payments/README.md)
 
 * [getOne](docs/sdks/payments/README.md#getone) - Get payment
 
-### [transactions](docs/sdks/transactions/README.md)
+### [Transactions](docs/sdks/transactions/README.md)
 
 * [list](docs/sdks/transactions/README.md#list) - List transactions
 * [getOne](docs/sdks/transactions/README.md#getone) - Get transaction
@@ -471,19 +466,23 @@ The `HTTPClient` constructor takes an optional `fetcher` argument that can be
 used to integrate a third-party HTTP client or when writing tests to mock out
 the HTTP client and feed in fixtures.
 
-The following example shows how to use the `"beforeRequest"` hook to to add a
-custom header and a timeout to requests and how to use the `"requestError"` hook
-to log errors:
+The following example shows how to:
+- route requests through a proxy server using [undici](https://www.npmjs.com/package/undici)'s ProxyAgent
+- use the `"beforeRequest"` hook to add a custom header and a timeout to requests
+- use the `"requestError"` hook to log errors
 
 ```typescript
 import { Moflay } from "@moflay/sdk";
+import { ProxyAgent } from "undici";
 import { HTTPClient } from "@moflay/sdk/lib/http";
 
+const dispatcher = new ProxyAgent("http://proxy.example.com:8080");
+
 const httpClient = new HTTPClient({
-  // fetcher takes a function that has the same signature as native `fetch`.
-  fetcher: (request) => {
-    return fetch(request);
-  }
+  // 'fetcher' takes a function that has the same signature as native 'fetch'.
+  fetcher: (input, init) =>
+    // 'dispatcher' is specific to undici and not part of the standard Fetch API.
+    fetch(input, { ...init, dispatcher } as RequestInit),
 });
 
 httpClient.addHook("beforeRequest", (request) => {

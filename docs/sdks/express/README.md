@@ -1,5 +1,4 @@
 # Express
-(*express*)
 
 ## Overview
 
