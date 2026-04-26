@@ -1,0 +1,37 @@
+speakeasyVersion: 1.634.2
+sources:
+    Moflay API:
+        sourceNamespace: moflay-api
+        sourceRevisionDigest: sha256:477a19cbbd24089617fba77bb2b8b89349e813ac3afc4018b8639aac090ff9b3
+        sourceBlobDigest: sha256:3bad3265c2a8adedaa1a706a290227aa6195303b6cd84a79ae21cb47caa9103d
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    moflay:
+        source: Moflay API
+        sourceNamespace: moflay-api
+        sourceRevisionDigest: sha256:477a19cbbd24089617fba77bb2b8b89349e813ac3afc4018b8639aac090ff9b3
+        sourceBlobDigest: sha256:3bad3265c2a8adedaa1a706a290227aa6195303b6cd84a79ae21cb47caa9103d
+        codeSamplesNamespace: moflay-api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:1dc79e3c52c40fbe602cf9c8601abaa47b59b925ce0d77ec0a6ed660a0b84618
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Moflay API:
+            inputs:
+                - location: https://api.moflay.com/openapi
+            output: .speakeasy/out.openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/moflay/moflay/moflay-api
+    targets:
+        moflay:
+            target: typescript
+            source: Moflay API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/moflay/moflay/moflay-api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

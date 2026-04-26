@@ -1,0 +1,434 @@
+lockVersion: 2.0.0
+id: 0dfadf13-cb51-413d-8f38-fc84ff655e9e
+management:
+  docChecksum: c6e1d03aec6d133b4a6debda6dfc2eee
+  docVersion: 1.0.0
+  speakeasyVersion: 1.634.2
+  generationVersion: 2.721.3
+  releaseVersion: 0.0.1
+  configChecksum: 97f37e80f32260af0e36afb228c54f41
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.12
+    core: 3.21.26
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.1
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    errorUnions: 0.1.1
+    errors: 2.86.1
+    examples: 2.82.3
+    globalSecurity: 2.82.14
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.5
+    methodArguments: 0.1.2
+    nameOverrides: 2.81.2
+    nullables: 0.1.1
+    pagination: 2.83.0
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.3.0
+    unions: 2.86.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/customer.md
+  - docs/models/customerdeleteresponse.md
+  - docs/models/customerlistresponse.md
+  - docs/models/customerlistresponsemeta.md
+  - docs/models/customerrequest.md
+  - docs/models/darajaexpressresponse.md
+  - docs/models/darajaexpressresponseenvironment.md
+  - docs/models/duplicateerrorerror.md
+  - docs/models/environment.md
+  - docs/models/errors/createunprocessableentity.md
+  - docs/models/errors/deleteunprocessableentity.md
+  - docs/models/errors/duplicateerror.md
+  - docs/models/errors/expressunprocessableentity.md
+  - docs/models/errors/getcustomerunprocessableentity.md
+  - docs/models/errors/getpaymentunprocessableentity.md
+  - docs/models/errors/gettransactionunprocessableentity.md
+  - docs/models/errors/internalservererror.md
+  - docs/models/errors/invalidaccesserror.md
+  - docs/models/errors/invalidapikeyerror.md
+  - docs/models/errors/listcustomersunprocessableentity.md
+  - docs/models/errors/listtransactionsunprocessableentity.md
+  - docs/models/errors/methodnotallowederror.md
+  - docs/models/errors/missingapikeyerror.md
+  - docs/models/errors/notfounderror.md
+  - docs/models/errors/ratelimitexceedederror.md
+  - docs/models/errors/updateunprocessableentity.md
+  - docs/models/errors/validationerror.md
+  - docs/models/internalservererrorerror.md
+  - docs/models/invalidaccesserrorerror.md
+  - docs/models/invalidapikeyerrorerror.md
+  - docs/models/metadata.md
+  - docs/models/methodnotallowederrorerror.md
+  - docs/models/missingapikeyerrorerror.md
+  - docs/models/notfounderrorerror.md
+  - docs/models/operations/deleterequest.md
+  - docs/models/operations/expressrequest.md
+  - docs/models/operations/expressrequestbody.md
+  - docs/models/operations/getcustomerrequest.md
+  - docs/models/operations/getpaymentrequest.md
+  - docs/models/operations/gettransactionrequest.md
+  - docs/models/operations/listcustomersrequest.md
+  - docs/models/operations/listcustomersresponse.md
+  - docs/models/operations/listcustomerssortby.md
+  - docs/models/operations/listcustomerssortorder.md
+  - docs/models/operations/listtransactionsrequest.md
+  - docs/models/operations/listtransactionsresponse.md
+  - docs/models/operations/listtransactionssortby.md
+  - docs/models/operations/listtransactionssortorder.md
+  - docs/models/operations/updaterequest.md
+  - docs/models/paymentstatus.md
+  - docs/models/paymentstatusenvironment.md
+  - docs/models/ratelimitexceedederrorerror.md
+  - docs/models/security.md
+  - docs/models/source.md
+  - docs/models/status.md
+  - docs/models/transaction.md
+  - docs/models/transactionlistresponse.md
+  - docs/models/transactionlistresponsemeta.md
+  - docs/models/transactionstatus.md
+  - docs/models/transactiontype.md
+  - docs/models/validation.md
+  - docs/models/validationerrorerror.md
+  - docs/sdks/customers/README.md
+  - docs/sdks/express/README.md
+  - docs/sdks/moflay/README.md
+  - docs/sdks/payments/README.md
+  - docs/sdks/transactions/README.md
+  - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/expressPay.example.ts
+  - examples/package.json
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/customersCreate.ts
+  - src/funcs/customersDelete.ts
+  - src/funcs/customersGetOne.ts
+  - src/funcs/customersList.ts
+  - src/funcs/customersUpdate.ts
+  - src/funcs/expressPay.ts
+  - src/funcs/paymentsGetOne.ts
+  - src/funcs/transactionsGetOne.ts
+  - src/funcs/transactionsList.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/customer.ts
+  - src/models/customerdeleteresponse.ts
+  - src/models/customerlistresponse.ts
+  - src/models/customerrequest.ts
+  - src/models/darajaexpressresponse.ts
+  - src/models/duplicateerror.ts
+  - src/models/environment.ts
+  - src/models/errors/create.ts
+  - src/models/errors/delete.ts
+  - src/models/errors/duplicateerror.ts
+  - src/models/errors/express.ts
+  - src/models/errors/getcustomer.ts
+  - src/models/errors/getpayment.ts
+  - src/models/errors/gettransaction.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/internalservererror.ts
+  - src/models/errors/invalidaccesserror.ts
+  - src/models/errors/invalidapikeyerror.ts
+  - src/models/errors/listcustomers.ts
+  - src/models/errors/listtransactions.ts
+  - src/models/errors/methodnotallowederror.ts
+  - src/models/errors/missingapikeyerror.ts
+  - src/models/errors/moflaydefaulterror.ts
+  - src/models/errors/moflayerror.ts
+  - src/models/errors/notfounderror.ts
+  - src/models/errors/ratelimitexceedederror.ts
+  - src/models/errors/responsevalidationerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/errors/update.ts
+  - src/models/errors/validationerror.ts
+  - src/models/index.ts
+  - src/models/internalservererror.ts
+  - src/models/invalidaccesserror.ts
+  - src/models/invalidapikeyerror.ts
+  - src/models/metadata.ts
+  - src/models/methodnotallowederror.ts
+  - src/models/missingapikeyerror.ts
+  - src/models/notfounderror.ts
+  - src/models/operations/delete.ts
+  - src/models/operations/express.ts
+  - src/models/operations/getcustomer.ts
+  - src/models/operations/getpayment.ts
+  - src/models/operations/gettransaction.ts
+  - src/models/operations/index.ts
+  - src/models/operations/listcustomers.ts
+  - src/models/operations/listtransactions.ts
+  - src/models/operations/update.ts
+  - src/models/paymentstatus.ts
+  - src/models/ratelimitexceedederror.ts
+  - src/models/security.ts
+  - src/models/source.ts
+  - src/models/transaction.ts
+  - src/models/transactionlistresponse.ts
+  - src/models/transactionstatus.ts
+  - src/models/validationerror.ts
+  - src/sdk/customers.ts
+  - src/sdk/express.ts
+  - src/sdk/index.ts
+  - src/sdk/payments.ts
+  - src/sdk/sdk.ts
+  - src/sdk/transactions.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  listCustomers:
+    speakeasy-default-list-customers:
+      parameters:
+        query:
+          q: "John Doe"
+          cursor: "eyJpZCI6IjEyMyJ9"
+          limit: 10
+          start: "2024-12-01T00:00:00.000Z"
+          end: "2024-12-31T23:59:59.999Z"
+          sortOrder: "desc"
+          sortBy: "createdAt"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "cus_GqfKXLmg61LURZhB", "object": "customer", "environment": "sandbox", "name": "John Doe", "phoneNumber": "254712345678", "description": "VIP customer with recurring payments", "countryCode": "KE", "isActive": true, "isVerified": true, "lastActiveAt": "2024-12-19T16:45:00.000Z", "firstTransactionAt": "2024-12-15T09:15:00.000Z", "source": "api", "metadata": {}, "createdAt": "2024-12-10T08:30:00.000Z", "updatedAt": "2024-12-19T14:22:00.000Z"}], "meta": {"cursor": "eyJpZCI6ImN1c19HcWZLWExtZzYxTFVSWmhCIn0=", "hasPreviousPage": false, "hasNextPage": true}}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  create:
+    speakeasy-default-create:
+      requestBody:
+        application/json: {"phoneNumber": "254712345678", "metadata": {"user_preference": "dark_mode", "last_login": 1640995200, "is_premium": true, "account_balance": 1250.75, "notifications_enabled": false}}
+      responses:
+        "200":
+          application/json: {"id": "cus_GqfKXLmg61LURZhB", "object": "customer", "environment": "sandbox", "name": "John Doe", "phoneNumber": "254712345678", "description": "VIP customer with recurring payments", "countryCode": "KE", "isActive": true, "isVerified": true, "lastActiveAt": "2024-12-19T16:45:00.000Z", "firstTransactionAt": "2024-12-15T09:15:00.000Z", "source": "api", "metadata": {}, "createdAt": "2024-12-10T08:30:00.000Z", "updatedAt": "2024-12-19T14:22:00.000Z"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "409":
+          application/json: {"error": {"status": 409, "code": "duplicate_error", "message": "A record with this information already exists."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  getCustomer:
+    speakeasy-default-get-customer:
+      parameters:
+        path:
+          id: "cus_GqfKXLmg61LURZhB"
+      responses:
+        "200":
+          application/json: {"id": "cus_GqfKXLmg61LURZhB", "object": "customer", "environment": "sandbox", "name": "John Doe", "phoneNumber": "254712345678", "description": "VIP customer with recurring payments", "countryCode": "KE", "isActive": true, "isVerified": true, "lastActiveAt": "2024-12-19T16:45:00.000Z", "firstTransactionAt": "2024-12-15T09:15:00.000Z", "source": "api", "metadata": {}, "createdAt": "2024-12-10T08:30:00.000Z", "updatedAt": "2024-12-19T14:22:00.000Z"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "404":
+          application/json: {"error": {"status": 404, "code": "not_found", "message": "The requested endpoint does not exist."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  update:
+    speakeasy-default-update:
+      parameters:
+        path:
+          id: "cus_GqfKXLmg61LURZhB"
+      requestBody:
+        application/json: {"phoneNumber": "254712345678", "metadata": {"user_preference": "dark_mode", "last_login": 1640995200, "is_premium": true, "account_balance": 1250.75, "notifications_enabled": false}}
+      responses:
+        "200":
+          application/json: {"id": "cus_GqfKXLmg61LURZhB", "object": "customer", "environment": "sandbox", "name": "John Doe", "phoneNumber": "254712345678", "description": "VIP customer with recurring payments", "countryCode": "KE", "isActive": true, "isVerified": true, "lastActiveAt": "2024-12-19T16:45:00.000Z", "firstTransactionAt": "2024-12-15T09:15:00.000Z", "source": "api", "metadata": {}, "createdAt": "2024-12-10T08:30:00.000Z", "updatedAt": "2024-12-19T14:22:00.000Z"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "404":
+          application/json: {"error": {"status": 404, "code": "not_found", "message": "The requested endpoint does not exist."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "409":
+          application/json: {"error": {"status": 409, "code": "duplicate_error", "message": "A record with this information already exists."}}
+        "422":
+          application/json: {"error": {"status": 422}, "code": "invalid_access", "message": "The API key does not have the necessary permissions to access this resource."}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  delete:
+    speakeasy-default-delete:
+      parameters:
+        path:
+          id: "cus_GqfKXLmg61LURZhB"
+      responses:
+        "200":
+          application/json: {"id": "cus_GqfKXLmg61LURZhB"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "404":
+          application/json: {"error": {"status": 404, "code": "not_found", "message": "The requested endpoint does not exist."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  listTransactions:
+    speakeasy-default-list-transactions:
+      parameters:
+        query:
+          q: "Premium Subscription"
+          cursor: "eyJpZCI6IjEyMyJ9"
+          customerId: "cus_MNO345PQR678STU"
+          statuses: ["pending", "completed"]
+          amountRange: [10000, 50000]
+          amount: ["150.75", "299.99", "1000.00"]
+          limit: 10
+          start: "2024-12-01T00:00:00.000Z"
+          end: "2024-12-31T23:59:59.999Z"
+          sortOrder: "desc"
+          sortBy: "createdAt"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "trxn_ABC123DEF456GHI", "customerId": "cus_MNO345PQR678STU", "object": "transaction", "environment": "sandbox", "currency": "KES", "amount": 1000, "description": "Payment for Order #12345 - Premium Subscription", "phoneNumber": "254712345678", "status": "completed", "type": "payment", "receiptNumber": "QMF7MBB5ED", "processedAt": "2024-12-19T10:30:00.000Z", "paidAt": "2024-12-19T10:32:00.000Z", "failedAt": null, "unknownAt": null, "failureReason": null, "metadata": {}, "createdAt": "2024-12-19T10:25:00.000Z", "source": "api"}], "meta": {"cursor": "eyJpZCI6InRyeG5fQUJDMTIzREVGNDU2R0hJIn0=", "hasPreviousPage": false, "hasNextPage": true}}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422}, "code": "invalid_access", "message": "The API key does not have the necessary permissions to access this resource."}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  getTransaction:
+    speakeasy-default-get-transaction:
+      parameters:
+        path:
+          id: "trxn_ABC123DEF456GHI"
+      responses:
+        "200":
+          application/json: {"id": "trxn_ABC123DEF456GHI", "customerId": "cus_MNO345PQR678STU", "object": "transaction", "environment": "sandbox", "currency": "KES", "amount": 1000, "description": "Payment for Order #12345 - Premium Subscription", "phoneNumber": "254712345678", "status": "completed", "type": "payment", "receiptNumber": "QMF7MBB5ED", "processedAt": "2024-12-19T10:30:00.000Z", "paidAt": "2024-12-19T10:32:00.000Z", "failedAt": null, "unknownAt": null, "failureReason": null, "metadata": {}, "createdAt": "2024-12-19T10:25:00.000Z", "source": "api"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "404":
+          application/json: {"error": {"status": 404, "code": "not_found", "message": "The requested endpoint does not exist."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422}, "code": "invalid_access", "message": "The API key does not have the necessary permissions to access this resource."}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  express:
+    speakeasy-default-express:
+      parameters:
+        header:
+          Idempotency-Key: "express_order_12345"
+      requestBody:
+        application/json: {"phoneNumber": "254712345678", "customerMetadata": {"user_preference": "dark_mode", "last_login": 1640995200, "is_premium": true, "account_balance": 1250.75, "notifications_enabled": false}, "amount": 526895, "description": "busily judgementally silently upset usher daddy in edible", "accountReference": "ORDER123", "metadata": {"user_preference": "dark_mode", "last_login": 1640995200, "is_premium": true, "account_balance": 1250.75, "notifications_enabled": false}}
+      responses:
+        "202":
+          application/json: {"paymentId": "pay_ABC123DEF456GHI", "transactionId": "trxn_ABC123DEF456GHI", "customerId": "cus_GqfKXLmg61LURZhB", "phoneNumber": "254712345678", "amount": 1000, "currency": "KES", "status": "pending", "description": "Premium plan", "accountReference": "ORDER123", "environment": "sandbox", "timestamp": "2024-12-19T10:25:00.000Z", "message": "Payment request sent to customer"}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+  getPayment:
+    speakeasy-default-get-payment:
+      parameters:
+        path:
+          id: "pay_ABC123DEF456GHI"
+      responses:
+        "200":
+          application/json: {"id": "pay_ABC123DEF456GHI", "transactionId": "trxn_ABC123DEF456GHI", "customerId": "cus_GqfKXLmg61LURZhB", "merchantRequestId": "29115-34620561-1", "checkoutRequestId": "ws_CO_191220241030123456789", "status": "completed", "statusDetail": "The service request is processed successfully.", "amount": 1000, "currency": "KES", "description": "Premium plan", "accountReference": "ORDER123", "receiptNumber": "QMF7MBB5ED", "environment": "sandbox", "createdAt": "2024-12-19T10:25:00.000Z", "updatedAt": "2024-12-19T10:32:00.000Z", "completedAt": "2024-12-19T10:32:00.000Z", "failedAt": null, "unknownAt": null}
+        "401":
+          application/json: {"error": {"status": 401, "code": "missing_api_key", "message": "Missing API key in the authorization header."}}
+        "403":
+          application/json: {"error": {"status": 403, "code": "invalid_api_key", "message": "API key is invalid."}}
+        "404":
+          application/json: {"error": {"status": 404, "code": "not_found", "message": "The requested endpoint does not exist."}}
+        "405":
+          application/json: {"error": {"status": 405, "code": "method_not_allowed", "message": "Method is not allowed for the requested path."}}
+        "422":
+          application/json: {"error": {"status": 422, "code": "validation_error", "message": "We found an error with one or more fields in the request.", "validation": [{"field": "email", "message": "Invalid email format"}, {"field": "age", "message": "Expected number, received string"}]}}
+        "429":
+          application/json: {"error": {"status": 429, "code": "rate_limit_exceeded", "message": "You have exceeded your request limit. Please try again later."}}
+        "500":
+          application/json: {"error": {"status": 500, "code": "internal_server_error", "message": "An unexpected error occurred."}}
+examplesVersion: 1.0.2
