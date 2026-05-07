@@ -19,6 +19,8 @@ export class Customers extends ClientSDK {
    *
    * @remarks
    * Get a list of all customers in the organization
+   *
+   * **Permissions**: `customers.read`
    */
   async list(
     request?: operations.ListCustomersRequest | undefined,
@@ -38,6 +40,8 @@ export class Customers extends ClientSDK {
    *
    * @remarks
    * Create a customer in the organization
+   *
+   * **Permissions**: `customers.write`
    */
   async create(
     request: models.CustomerRequest,
@@ -55,6 +59,8 @@ export class Customers extends ClientSDK {
    *
    * @remarks
    * Get a customer by their ID in the organization
+   *
+   * **Permissions**: `customers.read`
    */
   async getOne(
     request: operations.GetCustomerRequest,
@@ -72,6 +78,8 @@ export class Customers extends ClientSDK {
    *
    * @remarks
    * Delete a customer by their ID in the organization
+   *
+   * **Permissions**: `customers.write`
    */
   async delete(
     request: operations.DeleteRequest,
@@ -89,6 +97,8 @@ export class Customers extends ClientSDK {
    *
    * @remarks
    * Update a customer in the organization
+   *
+   * **Permissions**: `customers.write`
    */
   async update(
     request: operations.UpdateRequest,

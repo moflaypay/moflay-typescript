@@ -43,7 +43,7 @@ export type ListTransactionsRequest = {
    */
   customerId?: string | null | undefined;
   /**
-   * Array of transaction statuses to filter by. Available statuses: 'initiating', 'pending', 'completed', 'failed', 'unknown'
+   * Array of transaction statuses to filter by. Available statuses: 'initiating', 'pending', 'completed', 'failed', 'canceled', 'unknown'
    */
   statuses?: Array<models.TransactionStatus> | null | undefined;
   /**

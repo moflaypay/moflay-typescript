@@ -12,6 +12,8 @@ Create M-Pesa Express payments. Use the returned paymentId with the Payments API
 
 Initiate an M-Pesa Express (STK Push) payment.
 
+**Permissions**: `express.pay`
+
 ### Example Usage
 
 <!-- UsageSnippet language="typescript" operationID="express" method="post" path="/v1/express" -->

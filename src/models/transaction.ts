@@ -57,7 +57,7 @@ export type Transaction = {
    */
   phoneNumber: string;
   /**
-   * Current status. Possible values: initiating, pending, completed, failed, unknown
+   * Current status. Possible values: initiating, pending, completed, failed, canceled, unknown
    */
   status: TransactionStatus;
   /**

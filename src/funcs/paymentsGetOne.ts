@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Get the current status of an Express payment attempt using either the paymentId or related transactionId returned by POST /v1/express.
+ *
+ * **Permissions**: `transactions.read`
  */
 export function paymentsGetOne(
   client: MoflayCore,
