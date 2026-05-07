@@ -38,6 +38,8 @@ import {
  *
  * @remarks
  * Get a list of all customers in the organization
+ *
+ * **Permissions**: `customers.read`
  */
 export function customersList(
   client: MoflayCore,

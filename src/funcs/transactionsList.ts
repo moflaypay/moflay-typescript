@@ -38,6 +38,8 @@ import {
  *
  * @remarks
  * List all transactions in the organization
+ *
+ * **Permissions**: `transactions.read`
  */
 export function transactionsList(
   client: MoflayCore,

@@ -1,6 +1,6 @@
 # TransactionStatus
 
-Current status. Possible values: initiating, pending, completed, failed, unknown
+Current status. Possible values: initiating, pending, completed, failed, canceled, unknown
 
 ## Example Usage
 
@@ -13,5 +13,5 @@ let value: TransactionStatus = "completed";
 ## Values
 
 ```typescript
-"initiating" | "pending" | "completed" | "failed" | "unknown"
+"initiating" | "pending" | "completed" | "failed" | "canceled" | "unknown"
 ```
