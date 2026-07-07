@@ -16,6 +16,8 @@ Create and manage customers in the organization
 
 Get a list of all customers in the organization
 
+**Permissions**: `customers.read`
+
 ### Example Usage
 
 <!-- UsageSnippet language="typescript" operationID="listCustomers" method="get" path="/v1/customers" -->
@@ -105,6 +107,8 @@ run();
 ## create
 
 Create a customer in the organization
+
+**Permissions**: `customers.write`
 
 ### Example Usage
 
@@ -201,6 +205,8 @@ run();
 
 Get a customer by their ID in the organization
 
+**Permissions**: `customers.read`
+
 ### Example Usage
 
 <!-- UsageSnippet language="typescript" operationID="getCustomer" method="get" path="/v1/customers/{id}" -->
@@ -282,6 +288,8 @@ run();
 
 Delete a customer by their ID in the organization
 
+**Permissions**: `customers.write`
+
 ### Example Usage
 
 <!-- UsageSnippet language="typescript" operationID="delete" method="delete" path="/v1/customers/{id}" -->
@@ -362,6 +370,8 @@ run();
 ## update
 
 Update a customer in the organization
+
+**Permissions**: `customers.write`
 
 ### Example Usage
 

@@ -51,13 +51,17 @@ export type PaymentStatus = {
    */
   checkoutRequestId: string | null;
   /**
-   * Current status. Possible values: initiating, pending, completed, failed, unknown
+   * Current status. Possible values: initiating, pending, completed, failed, canceled, unknown
    */
   status: TransactionStatus;
   /**
    * Provider detail explaining the current payment status, when available
    */
   statusDetail: string | null;
+  /**
+   * Developer-readable explanation when the payment failed, was canceled, or moved to an unknown state. Null for successful or in-progress payments.
+   */
+  failureReason: string | null;
   /**
    * Payment amount in the smallest currency unit
    */
@@ -91,6 +95,10 @@ export type PaymentStatus = {
    */
   updatedAt: Date;
   /**
+   * Timestamp when the payment reached a terminal completed, failed, canceled, or unknown state (ISO 8601 format)
+   */
+  processedAt: Date | null;
+  /**
    * Timestamp when the payment completed successfully (ISO 8601 format)
    */
   completedAt: Date | null;
@@ -122,6 +130,7 @@ export const PaymentStatus$inboundSchema: z.ZodType<
   checkoutRequestId: z.nullable(z.string()),
   status: TransactionStatus$inboundSchema,
   statusDetail: z.nullable(z.string()),
+  failureReason: z.nullable(z.string()),
   amount: z.number(),
   currency: z.string(),
   description: z.string(),
@@ -130,6 +139,9 @@ export const PaymentStatus$inboundSchema: z.ZodType<
   environment: PaymentStatusEnvironment$inboundSchema,
   createdAt: z.string().datetime({ offset: true }).transform(v => new Date(v)),
   updatedAt: z.string().datetime({ offset: true }).transform(v => new Date(v)),
+  processedAt: z.nullable(
+    z.string().datetime({ offset: true }).transform(v => new Date(v)),
+  ),
   completedAt: z.nullable(
     z.string().datetime({ offset: true }).transform(v => new Date(v)),
   ),

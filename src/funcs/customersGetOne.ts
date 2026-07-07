@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Get a customer by their ID in the organization
+ *
+ * **Permissions**: `customers.read`
  */
 export function customersGetOne(
   client: MoflayCore,

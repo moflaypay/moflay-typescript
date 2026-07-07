@@ -34,7 +34,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.0.4
+  version: 0.1.0
   acceptHeaderEnum: false
   additionalDependencies:
     dependencies: {}
@@ -43,6 +43,7 @@ typescript:
   additionalPackageJSON: {}
   additionalScripts: {}
   alwaysIncludeInboundAndOutbound: false
+  apiPromiseHelpers: false
   author: Speakeasy
   baseErrorName: MoflayError
   clientServerStatusCodesAsErrors: true
@@ -53,6 +54,7 @@ typescript:
   enableReactQuery: false
   enumFormat: union
   envVarPrefix: MOFLAY
+  eventStreamClassName: EventStream
   exportZodModelNamespace: false
   fixEnumNameSanitization: false
   flatAdditionalProperties: false
@@ -84,6 +86,8 @@ typescript:
   packageName: '@moflay/sdk'
   preApplyUnionDiscriminators: true
   preserveModelFieldNames: false
+  privateIdentifierPrefix: '#'
+  requestExtras: false
   responseFormat: flat
   sseFlatResponse: true
   templateVersion: v2

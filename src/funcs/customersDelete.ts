@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Delete a customer by their ID in the organization
+ *
+ * **Permissions**: `customers.write`
  */
 export function customersDelete(
   client: MoflayCore,

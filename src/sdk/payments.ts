@@ -14,6 +14,8 @@ export class Payments extends ClientSDK {
    *
    * @remarks
    * Get the current status of an Express payment attempt using either the paymentId or related transactionId returned by POST /v1/express.
+   *
+   * **Permissions**: `transactions.read`
    */
   async getOne(
     request: operations.GetPaymentRequest,

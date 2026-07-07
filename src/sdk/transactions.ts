@@ -16,6 +16,8 @@ export class Transactions extends ClientSDK {
    *
    * @remarks
    * List all transactions in the organization
+   *
+   * **Permissions**: `transactions.read`
    */
   async list(
     request?: operations.ListTransactionsRequest | undefined,
@@ -35,6 +37,8 @@ export class Transactions extends ClientSDK {
    *
    * @remarks
    * Get a transaction in the organization
+   *
+   * **Permissions**: `transactions.read`
    */
   async getOne(
     request: operations.GetTransactionRequest,
