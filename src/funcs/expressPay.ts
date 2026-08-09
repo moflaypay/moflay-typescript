@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Initiate an M-Pesa Express (STK Push) payment.
+ *
+ * **Permissions**: `express.pay`
  */
 export function expressPay(
   client: MoflayCore,

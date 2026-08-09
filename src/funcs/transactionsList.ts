@@ -3,7 +3,6 @@
  */
 
 import { MoflayCore } from "../core.js";
-import { dlv } from "../lib/dlv.js";
 import { encodeFormQuery } from "../lib/encodings.js";
 import { matchStatusCode } from "../lib/http.js";
 import * as M from "../lib/matchers.js";
@@ -38,6 +37,8 @@ import {
  *
  * @remarks
  * List all transactions in the organization
+ *
+ * **Permissions**: `transactions.read`
  */
 export function transactionsList(
   client: MoflayCore,
@@ -255,7 +256,8 @@ async function $do(
     >;
     "~next"?: { cursor: string };
   } => {
-    const nextCursor = dlv(responseData, "meta.cursor");
+    const nextCursor =
+      (responseData as { meta: { cursor: unknown | null } }).meta.cursor;
     if (typeof nextCursor !== "string") {
       return { next: () => null };
     }

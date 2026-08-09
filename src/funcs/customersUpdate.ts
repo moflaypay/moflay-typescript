@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Update a customer in the organization
+ *
+ * **Permissions**: `customers.write`
  */
 export function customersUpdate(
   client: MoflayCore,

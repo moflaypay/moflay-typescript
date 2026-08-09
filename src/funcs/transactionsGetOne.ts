@@ -32,6 +32,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Get a transaction in the organization
+ *
+ * **Permissions**: `transactions.read`
  */
 export function transactionsGetOne(
   client: MoflayCore,

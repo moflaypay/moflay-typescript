@@ -13,6 +13,8 @@ Everything about transactions in the organization
 
 List all transactions in the organization
 
+**Permissions**: `transactions.read`
+
 ### Example Usage
 
 <!-- UsageSnippet language="typescript" operationID="listTransactions" method="get" path="/v1/transactions" -->
@@ -130,6 +132,8 @@ run();
 ## getOne
 
 Get a transaction in the organization
+
+**Permissions**: `transactions.read`
 
 ### Example Usage
 

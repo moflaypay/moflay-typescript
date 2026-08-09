@@ -31,6 +31,8 @@ import { Result } from "../types/fp.js";
  *
  * @remarks
  * Create a customer in the organization
+ *
+ * **Permissions**: `customers.write`
  */
 export function customersCreate(
   client: MoflayCore,

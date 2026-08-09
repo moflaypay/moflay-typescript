@@ -6,17 +6,18 @@ import * as z from "zod/v3";
 import { ClosedEnum } from "../types/enums.js";
 
 /**
- * Current status. Possible values: initiating, pending, completed, failed, unknown
+ * Current status. Possible values: initiating, pending, completed, failed, canceled, unknown
  */
 export const TransactionStatus = {
   Initiating: "initiating",
   Pending: "pending",
   Completed: "completed",
   Failed: "failed",
+  Canceled: "canceled",
   Unknown: "unknown",
 } as const;
 /**
- * Current status. Possible values: initiating, pending, completed, failed, unknown
+ * Current status. Possible values: initiating, pending, completed, failed, canceled, unknown
  */
 export type TransactionStatus = ClosedEnum<typeof TransactionStatus>;
 

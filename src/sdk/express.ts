@@ -14,6 +14,8 @@ export class Express extends ClientSDK {
    *
    * @remarks
    * Initiate an M-Pesa Express (STK Push) payment.
+   *
+   * **Permissions**: `express.pay`
    */
   async pay(
     request: operations.ExpressRequest,
